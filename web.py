@@ -40,10 +40,10 @@ st.sidebar.markdown('##### For communication and cooperation, please contact wsh
 
 
 #%%load model
-mlp_model = joblib.load(r'H:\吴世楠返修\Heliyon\返修图表\上传\mlp_model.pkl')
+mlp_model = joblib.load('mlp_model.pkl')
 
 #%%load data
-hp_train = pd.read_csv(r'H:\吴世楠返修\Heliyon\返修图表\liver_cut_data_recurrence_new.csv')
+hp_train = pd.read_csv('liver_cut_data_recurrence_new.csv')
 features =["GGT",
             "N",
             "Fibrinogen",
